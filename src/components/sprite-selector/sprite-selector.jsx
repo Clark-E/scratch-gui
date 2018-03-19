@@ -98,7 +98,7 @@ const SpriteSelectorComponent = function (props) {
                 <Box className={styles.itemsWrapper}>
                     {Object.keys(sprites)
                         // Re-order by list order
-                        .sort((id1, id2) => sprites[id2].order - sprites[id1].order)
+                        .sort((id1, id2) => sprites[id1].order - sprites[id2].order)
                         .map(id => sprites[id])
                         .map(sprite => (
                             <SpriteSelectorItem
